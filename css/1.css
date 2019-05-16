@@ -245,6 +245,27 @@ a.link.portfolio1{
     background-repeat: no-repeat;
     background-image:url("../img/portfolia/Layer42@1X.png");
 }
+.Slider{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 1.9%;
+    top: 114.3%;
+    width: 54px;
+    height: 5px;
+}
+.SliderBox{
+    height: 6px;
+    width: 6px;
+    background-color: #ddd2c5;
+}
+.Autobiography::before{
+    position: absolute;
+    bottom: 352px;
+    width: 89.5%;
+    border-top: 1px solid #e4e9eb;
+    content: "";
+}
 .Autobiography{
     display: flex;
     position: relative;
@@ -282,7 +303,7 @@ a.link.portfolio1{
     flex-direction: column; 
     position: relative;
     height: 217px;
-    width: 580px;
+    width: 73.2%;
     font-family: "MavenProRegular", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
     padding-top: 0px;
 }
@@ -318,38 +339,36 @@ a.link.portfolio1{
     letter-spacing: 1px;
 }
 .AutobiographyLogo{
+    position: relative;
+    left:65.5%;
+    width: 149px;
+    height: 24px;
+    margin-top: 6%;
+}
+.icon-list{
     display: flex;
-    width: 147px;
-    background-color: #6ccbbe;
-    height: 24px;
-    margin-top: 35px;
-    align-self: flex-end;
-}
-.f{
-    height: 24px;
+    list-style: none;
     width: 24px;
-}
-.a1{
-    background-image: url("../img/social/Facebook@1X.png");
+    height: 24px;
 }
 
-.a2{
-    background-image: url("../img/social/Twitter@1X.png");
+.social-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #6ccbbe;
+    text-decoration: none;
 }
-.a3{
-    width: 26px;
-    background-image: url("../img/social/Google@1X.png");
+
+.social-icon i{
+    color: #04ac95;
 }
-.a4{
-    background-image: url("../img/social/Pinterest@1X.png");
-}
-.a5{
-    width: 26px;
-    background-image: url("../img/social/Linkedin@1X.png");
-}
-.a6{
-    width: 25px;
-    background-image: url("../img/social/Dribbble@1X.png");
+
+.social-icon:hover{
+    background-color: #a5dbd4;
 }
 .Footer{
     position: relative;
