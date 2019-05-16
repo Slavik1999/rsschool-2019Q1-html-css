@@ -14,6 +14,7 @@
 }
 body{
     min-width:1000px;
+    margin: 0;
 }
 * {
     margin: 0;
@@ -247,27 +248,128 @@ a.link.portfolio1{
 .Autobiography{
     display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 341px;
     background-color: #2eb398;
+}
+.AutobiographyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 76.5%;
+    height: 93%;
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+}
+.Autobiographyphoto{
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 26.8%;
+}
+.hexfoto{
+    background-position:49%;
+    background-repeat: no-repeat;
+    background-image:url("../img/Image@1X.png");
+}
+.AutobiographyTextContainer{
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    height: 217px;
+    width: 580px;
+    font-family: "MavenProRegular", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
+    padding-top: 0px;
+}
+.Smith, .AutobiographyTextLorem{
+    color:white;
+}
+.Smith{
+    font-family: "MavenProRegular", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
+    font-weight: 100;
+    font-size: 22pt;
+    letter-spacing: 1px;
+    color: rgba(215, 252, 245, 255);
+    margin-bottom: 2px;
+}
+.Illustrator{
+    font-family: "Lato-Regular", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
+    line-height: 1;
+    font-weight: 100;
+    font-size: 13pt;
+    margin-bottom: 16px;
+    margin-left: 2px;
+    color: rgba(32, 129, 109, 255);
+    text-align: justify;
+    letter-spacing: 1px;
+    font-stretch:semi-condensed
+}
+.AutobiographyTextLorem{
+    font-family: "Lato-Regular", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
+    font-size: 12px;
+    font-stretch: condensed;
+    color: rgba(215, 252, 245, 255);
+    line-height: 21px;
+    letter-spacing: 1px;
+}
+.AutobiographyLogo{
+    display: flex;
+    width: 147px;
+    background-color: #6ccbbe;
+    height: 24px;
+    margin-top: 35px;
+    align-self: flex-end;
+}
+.f{
+    height: 24px;
+    width: 24px;
+}
+.a1{
+    background-image: url("../img/social/Facebook@1X.png");
+}
+
+.a2{
+    background-image: url("../img/social/Twitter@1X.png");
+}
+.a3{
+    width: 26px;
+    background-image: url("../img/social/Google@1X.png");
+}
+.a4{
+    background-image: url("../img/social/Pinterest@1X.png");
+}
+.a5{
+    width: 26px;
+    background-image: url("../img/social/Linkedin@1X.png");
+}
+.a6{
+    width: 25px;
+    background-image: url("../img/social/Dribbble@1X.png");
 }
 .Footer{
     position: relative;
     width: 100%;
     height: 608px;
 }
-.FooterContainer{
+.FooterInfo{
     position: relative;
     width: 100%;
     height: 564px;
     background-color: #323232;
 }
+
 .FooterCopyright{
     position: relative;
     width:100%;
     height: 44px;
     background-color: #222222;
 }
+
 
 
 
