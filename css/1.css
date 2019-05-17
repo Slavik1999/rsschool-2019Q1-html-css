@@ -14,8 +14,13 @@
 }
 * {
     margin: 0;
-
+    border: 0;
+    color:white;
 }
+body{
+    min-width:1000px;
+}
+
 .Head{
     display: flex;
     align-items:center;
@@ -23,7 +28,6 @@
     width: 100%;
     height: 63px;
     background-color: #323232;
-
 }
 .Triangle{
     position: relative;
@@ -67,15 +71,44 @@
 a.link.portfolio1{
     color:#2eb398;
 }
+.link:hover{
+    color: #8b8784;
+}
+.Head::before{
+    position: absolute;
+    left: 3.5%;
+    top:74px;
+    width: 40%;
+    border-top:1px solid #e4e9eb;
+    content:"";
+}
+.Head::after{
+    position: absolute;
+    right: 3.5%;
+    top:74px;
+    width: 40%;
+    border-top:1px solid #e4e9eb;
+    content:"";
+}
 .Portfolio{
     display: flex;
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 560px;
     align-content: flex-start;
     justify-content: center;
-    margin: 83px 0;
+    margin:83px 0 52px 0;
+
     flex-flow: wrap;
+}
+.PortfolioContainer{
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    height: 510px;
+    width: 1000px;
 }
 .row1::before{
     height: 106px;;
@@ -90,10 +123,9 @@ a.link.portfolio1{
     width: 842px;
     max-width: 842px;
     height:170px;
-
 }
 .row1::after{
-    height: 50%;;
+    height: 106px;
     border-right: 1px solid #e4e9eb;
     content: "";
 }
@@ -177,11 +209,7 @@ a.link.portfolio1{
     background-repeat: no-repeat;
     background-image:url("../img/portfolia/Layer39@1X.png");
 }
-.row3::before{
-    height: 106px;;
-    border-left: 1px solid #e4e9eb;
-    content: "";
-}
+
 .row3{
     display: flex;
     flex-direction: row;
@@ -191,11 +219,6 @@ a.link.portfolio1{
     max-width: 842px;
     height:170px;
 
-}
-.row3::after{
-    height: 50%;;
-    border-right: 1px solid #e4e9eb;
-    content: "";
 }
 .hex10{
     background-position:50%;
@@ -217,6 +240,306 @@ a.link.portfolio1{
     background-repeat: no-repeat;
     background-image:url("../img/portfolia/Layer42@1X.png");
 }
+.Slider{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 1.9%;
+    top: 114.3%;
+    width: 54px;
+    height: 5px;
+}
+.SliderBox{
+    height: 6px;
+    width: 6px;
+    background-color: #ddd2c5;
+}
+.SliderBox:hover{
+    background-color: #8b8784;
+}
+
+.Autobiography::before{
+    position: absolute;
+    bottom: 352px;
+    width: 89.5%;
+    border-top: 1px solid #e4e9eb;
+    content: "";
+}
+.Autobiography{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 341px;
+    background-color: #2eb398;
+}
+.AutobiographyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 76.5%;
+    height: 93%;
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+}
+.Autobiographyphoto{
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 26.8%;
+}
+.hexfoto{
+    background-position:49%;
+    background-repeat: no-repeat;
+    background-image:url("../img/Image@1X.png");
+}
+.AutobiographyTextContainer{
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    height: 217px;
+    width: 73.2%;
+    font-family: "MavenProRegular", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
+    padding-top: 0px;
+}
+.Smith, .AutobiographyTextLorem{
+    color:white;
+}
+.Smith{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 22pt;
+    color: rgba(215, 252, 245, 255);
+    margin-bottom: -1px;
+}
+.Illustrator{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 13pt;
+    margin-bottom: 13px;
+    font-weight:500;
+    margin-left: 0;
+    color: rgba(32, 129, 109, 255);
+    text-align: justify;
+}
+.AutobiographyTextLorem{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    color: rgba(215, 252, 245, 255);
+    line-height: 21px;
+    word-spacing: -1px;
+    font-weight: 500;
+}
+.AutobiographyLogo{
+    position: relative;
+    left:65.5%;
+    width: 149px;
+    height: 24px;
+    margin-top: 6%;
+}
+.icon-list{
+    display: flex;
+    list-style: none;
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #6ccbbe;
+    text-decoration: none;
+}
+
+.social-icon i{
+    color: #04ac95;
+}
+
+.social-icon:hover{
+    background-color: #a5dbd4;
+}
+.Footer{
+    position: relative;
+    width: 100%;
+    height: 608px;
+}
+.FooterInfo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 564px;
+    background-color: #323232;
+}
+.FooterInfoContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 539px;
+    width: 958px;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+.FooterInfoTextbox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 9.3%;
+    width: 584px;
+    height: 434px;
+}
+.FooterGetInTouch{
+    margin-left: -2px;
+    margin-top: -2px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    color: rgba(224, 224, 224, 255);
+    margin-bottom: 3px;
+}
+.FooterBeforeTextBox{
+    margin-left: 2px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    color: rgba(190, 190, 190, 255);
+    margin-bottom: 21px;
+    word-spacing: 2px;
+}
+.FooterName{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    padding-left: 14px;
+    width: 99.3%;
+    height: 38px;
+    margin-bottom: 16px;
+    background-color: #454545;
+}
+.FooterEmail{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    padding-left: 14px;
+    width: 99.3%;
+    height: 38px;
+    margin-bottom: 16px;
+    background-color: #454545;
+}
+.FooterSubject{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    padding-left: 14px;
+    width: 99.3%;
+    height: 38px;
+    margin-bottom: 16px;
+    background-color: #454545;
+}
+.FooterMessage{
+    padding-top:10px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    padding-left: 14px;
+    width: 99.3%;
+    height: 150px;
+    margin-bottom: 16px;
+    background-color: #454545;
+    resize: none;
+}
+.button-submit{
+    width: 90px;
+    height: 37px;
+    background-color: #2eb398;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: rgba(215, 252, 245, 255);
+    text-align: center;
+    align-self: flex-end;
+    margin-right:4px;
+}
+.button-submit:hover{
+    background-color: #3fc3a8
+}
+.FooterContacts{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 309px;
+    width: 191px;
+}
+.FooterContactsText{
+    margin-left: 0px;
+    margin-bottom: 32px;
+}
+.ContactsText{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    line-height: 22px;
+    word-spacing: 4px;
+}
+.FooterQuisque{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    color: rgba(224, 224, 224, 255);
+}
+.Contacts{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 191px;
+}
+.LocationFooter{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+}
+.LocationFooterImg{
+    margin-top: 5px;
+    margin-left:2px;
+    margin-right: 14px;
+}
+.PhoneFooter{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+}
+.PhoneFooterImg{
+    margin-top: 7px;
+    margin-right: 12px;
+}
+.MessageFooter{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+}
+.MessageFooterImg{
+    margin-left: -1px;
+    margin-top: 9px;
+    margin-right: 12px;
+}
+.FooterCopyright{
+    display: flex;
+    position: relative;
+    width:100%;
+    height: 44px;
+    background-color: #222222;
+}
+.Copyright{
+    color: rgba(69, 69, 69, 255);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    margin-top: 13px;
+    margin-left:62px;
+}
+
 
 
 
